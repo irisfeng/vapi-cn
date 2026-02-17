@@ -1,0 +1,53 @@
+{
+  "name": "@vapi-china/sdk",
+  "version": "1.0.0",
+  "description": "国内版VAPI - 语音AI代理开发平台 SDK",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "components"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vapi",
+    "voice",
+    "ai",
+    "speech",
+    "tts",
+    "stt",
+    "llm",
+    "websocket",
+    "aliyun",
+    "xunfei",
+    "zhipu"
+  ],
+  "author": "VAPI China Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/vapi-china.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/vapi-china/issues"
+  },
+  "homepage": "https://github.com/your-org/vapi-china#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "product_name": "VAPI",
+  "product_description": "面向开发者的语音AI代理平台",
+  "core_technologies": [
+    "STT",
+    "LLM",
+    "TTS"
+  ],
+  "modules": [
+    {
+      "module_id": "assistants",
+      "module_name": "语音助手(Assistants)",
+      "description": "单助手对话系统，适合大多数用例和快速迭代",
+      "features": [
+        {
+          "id": "A1",
+          "name": "单助手对话系统",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "A2",
+          "name": "System Prompt配置",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "A3",
+          "name": "Tools集成",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "A4",
+          "name": "Structured Outputs",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "A5",
+          "name": "首次消息配置",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "A6",
+          "name": "语音设置",
+          "priority": "P0",
+          "type": "standard"
+        },
+        {
+          "id": "A7",
+          "name": "转录配置",
+          "priority": "P0",
+          "type": "standard"
+        },
+        {
+          "id": "A8",
+          "name": "LLM模型选择",
+          "priority": "P0",
+          "type": "standard"
+        },
+        {
+          "id": "A9",
+          "name": "对话行为控制",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "A10",
+          "name": "知识库集成",
+          "priority": "P1",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "squads",
+      "module_name": "多助手团队(Squads)",
+      "description": "多助手协作系统，适合复杂工作流和专业分工场景",
+      "features": [
+        {
+          "id": "S1",
+          "name": "多助手协作",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "S2",
+          "name": "上下文保持转接",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "S3",
+          "name": "Handoff Tool",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "S4",
+          "name": "成员覆盖配置",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "S5",
+          "name": "持久化助手",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "S6",
+          "name": "临时助手",
+          "priority": "P1",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "phone_calls",
+      "module_name": "电话呼叫(Phone Calls)",
+      "description": "支持呼入呼出电话功能",
+      "features": [
+        {
+          "id": "P1",
+          "name": "呼入电话",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "P2",
+          "name": "呼出电话",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "P3",
+          "name": "电话号码管理",
+          "priority": "P0",
+          "type": "standard"
+        },
+        {
+          "id": "P4",
+          "name": "并发线路",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "P5",
+          "name": "语音信箱检测",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "P6",
+          "name": "通话录音",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "P7",
+          "name": "通话转接",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "P8",
+          "name": "自定义SIP",
+          "priority": "P2",
+          "type": "enterprise"
+        }
+      ]
+    },
+    {
+      "module_id": "web_calls",
+      "module_name": "网页呼叫(Web Calls)",
+      "description": "网页端语音对话SDK",
+      "features": [
+        {
+          "id": "W1",
+          "name": "Web SDK",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "W2",
+          "name": "客户端工具",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "W3",
+          "name": "实时语音通信",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "W4",
+          "name": "网页嵌入",
+          "priority": "P1",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "sms_chat",
+      "module_name": "短信/聊天(SMS/Chat)",
+      "description": "文字消息交互渠道",
+      "features": [
+        {
+          "id": "C1",
+          "name": "短信收发",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "C2",
+          "name": "聊天历史",
+          "priority": "P2",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "tools",
+      "module_name": "工具系统(Tools)",
+      "description": "扩展助手能力的工具系统",
+      "features": [
+        {
+          "id": "T1",
+          "name": "Default Tools",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "T2",
+          "name": "Custom Tools",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "T3",
+          "name": "Code Tools",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "T4",
+          "name": "Handoff Tool",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "T5",
+          "name": "Voicemail Tool",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "T6",
+          "name": "Client-side Tools",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "T7",
+          "name": "Make/GHL集成",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "T8",
+          "name": "参数加密",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "T9",
+          "name": "MCP支持",
+          "priority": "P2",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "customization",
+      "module_name": "自定义能力(Customization)",
+      "description": "自定义模型和语音",
+      "features": [
+        {
+          "id": "CU1",
+          "name": "自定义STT",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "CU2",
+          "name": "自定义LLM",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "CU3",
+          "name": "自定义TTS",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "CU4",
+          "name": "自托管模型",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "CU5",
+          "name": "自定义语音",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "CU6",
+          "name": "语音克隆",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "CU7",
+          "name": "自定义关键词",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "CU8",
+          "name": "多语言支持",
+          "priority": "P1",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "observability",
+      "module_name": "可观测性(Observability)",
+      "description": "测试、评估和数据分析",
+      "features": [
+        {
+          "id": "O1",
+          "name": "Evals",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "O2",
+          "name": "Simulations",
+          "priority": "P2",
+          "type": "core"
+        },
+        {
+          "id": "O3",
+          "name": "Boards",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "O4",
+          "name": "Structured Outputs",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "O5",
+          "name": "Scorecard",
+          "priority": "P2",
+          "type": "core"
+        },
+        {
+          "id": "O6",
+          "name": "通话历史",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "O7",
+          "name": "实时指标",
+          "priority": "P1",
+          "type": "standard"
+        },
+        {
+          "id": "O8",
+          "name": "A/B测试",
+          "priority": "P2",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "developer_tools",
+      "module_name": "开发者工具",
+      "description": "SDK和API",
+      "features": [
+        {
+          "id": "D1",
+          "name": "TypeScript SDK",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "D2",
+          "name": "Python SDK",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "D3",
+          "name": "cURL/REST API",
+          "priority": "P0",
+          "type": "core"
+        },
+        {
+          "id": "D4",
+          "name": "React SDK",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "D5",
+          "name": "CLI工具",
+          "priority": "P1",
+          "type": "core"
+        },
+        {
+          "id": "D6",
+          "name": "40+应用集成",
+          "priority": "P2",
+          "type": "standard"
+        },
+        {
+          "id": "D7",
+          "name": "Webhook",
+          "priority": "P1",
+          "type": "standard"
+        }
+      ]
+    },
+    {
+      "module_id": "enterprise",
+      "module_name": "企业功能",
+      "description": "安全、合规和企业支持",
+      "features": [
+        {
+          "id": "E1",
+          "name": "SOC2合规",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E2",
+          "name": "HIPAA合规",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E3",
+          "name": "PCI合规",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E4",
+          "name": "SSO",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E5",
+          "name": "RBAC",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E6",
+          "name": "99.99% SLA",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E7",
+          "name": "专属工程师",
+          "priority": "P2",
+          "type": "enterprise"
+        },
+        {
+          "id": "E8",
+          "name": "优先支持",
+          "priority": "P2",
+          "type": "enterprise"
+        }
+      ]
+    }
+  ],
+  "localization_requirements": {
+    "must_replace": [
+      {
+        "original": "OpenAI GPT-4o",
+        "replacement": "文心一言/通义千问/讯飞星火"
+      },
+      {
+        "original": "Anthropic Claude",
+        "replacement": "国内大模型替代"
+      },
+      {
+        "original": "Google Gemini",
+        "replacement": "国内大模型替代"
+      },
+      {
+        "original": "ElevenLabs TTS",
+        "replacement": "阿里云/腾讯云/讯飞TTS"
+      },
+      {
+        "original": "Deepgram STT",
+        "replacement": "讯飞/阿里云/腾讯云STT"
+      },
+      {
+        "original": "Gladia STT",
+        "replacement": "国内STT服务替代"
+      }
+    ],
+    "must_adjust": [
+      "电话号码购买对接国内运营商",
+      "通话录音增加合规提示",
+      "SOC2替换为等保2.0/3.0",
+      "数据存储必须国内数据中心",
+      "美元计费改为人民币计费"
+    ],
+    "can_retain": [
+      "Assistants架构",
+      "Squads架构",
+      "Tools系统",
+      "Web SDK",
+      "可观测性框架",
+      "多语言SDK设计"
+    ],
+    "must_add": [
+      "国内大模型统一接入层",
+      "国内语音服务统一接入",
+      "国内运营商对接",
+      "国内合规检测",
+      "国内支付集成",
+      "中文优化",
+      "国内模板市场"
+    ]
+  }
+}

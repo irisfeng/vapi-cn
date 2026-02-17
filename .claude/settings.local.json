@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__acp__Write",
+      "mcp__zread__get_repo_structure",
+      "mcp__zread__read_file",
+      "mcp__acp__Bash",
+      "mcp__web-search-prime__webSearchPrime",
+      "mcp__acp__Edit",
+      "mcp__zai-mcp-server__extract_text_from_screenshot",
+      "mcp__web-reader__webReader"
+    ]
+  }
+}

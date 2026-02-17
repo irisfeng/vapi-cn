@@ -1,0 +1,71 @@
+﻿模块,功能ID,功能名称,优先级,类型
+工具系统(Tools),T2,Custom Tools,P0,core
+开发者工具,D1,TypeScript SDK,P0,core
+开发者工具,D2,Python SDK,P0,core
+开发者工具,D3,cURL/REST API,P0,core
+电话呼叫(Phone Calls),P1,呼入电话,P0,core
+电话呼叫(Phone Calls),P2,呼出电话,P0,core
+电话呼叫(Phone Calls),P3,电话号码管理,P0,standard
+语音助手(Assistants),A1,单助手对话系统,P0,core
+语音助手(Assistants),A2,System Prompt配置,P0,core
+语音助手(Assistants),A3,Tools集成,P0,core
+语音助手(Assistants),A6,语音设置,P0,standard
+语音助手(Assistants),A7,转录配置,P0,standard
+语音助手(Assistants),A8,LLM模型选择,P0,standard
+可观测性(Observability),O1,Evals,P1,core
+可观测性(Observability),O3,Boards,P1,core
+可观测性(Observability),O4,Structured Outputs,P1,core
+可观测性(Observability),O6,通话历史,P1,standard
+可观测性(Observability),O7,实时指标,P1,standard
+多助手团队(Squads),S1,多助手协作,P1,core
+多助手团队(Squads),S2,上下文保持转接,P1,core
+多助手团队(Squads),S3,Handoff Tool,P1,core
+多助手团队(Squads),S5,持久化助手,P1,standard
+多助手团队(Squads),S6,临时助手,P1,standard
+工具系统(Tools),T1,Default Tools,P1,core
+工具系统(Tools),T3,Code Tools,P1,core
+工具系统(Tools),T4,Handoff Tool,P1,core
+工具系统(Tools),T6,Client-side Tools,P1,standard
+工具系统(Tools),T8,参数加密,P1,standard
+开发者工具,D4,React SDK,P1,core
+开发者工具,D5,CLI工具,P1,core
+开发者工具,D7,Webhook,P1,standard
+电话呼叫(Phone Calls),P4,并发线路,P1,standard
+电话呼叫(Phone Calls),P6,通话录音,P1,standard
+电话呼叫(Phone Calls),P7,通话转接,P1,standard
+网页呼叫(Web Calls),W1,Web SDK,P1,core
+网页呼叫(Web Calls),W2,客户端工具,P1,standard
+网页呼叫(Web Calls),W3,实时语音通信,P1,standard
+网页呼叫(Web Calls),W4,网页嵌入,P1,standard
+自定义能力(Customization),CU1,自定义STT,P1,core
+自定义能力(Customization),CU2,自定义LLM,P1,core
+自定义能力(Customization),CU3,自定义TTS,P1,core
+自定义能力(Customization),CU5,自定义语音,P1,standard
+自定义能力(Customization),CU8,多语言支持,P1,standard
+语音助手(Assistants),A4,Structured Outputs,P1,core
+语音助手(Assistants),A5,首次消息配置,P1,standard
+语音助手(Assistants),A9,对话行为控制,P1,standard
+语音助手(Assistants),A10,知识库集成,P1,standard
+企业功能,E1,SOC2合规,P2,enterprise
+企业功能,E2,HIPAA合规,P2,enterprise
+企业功能,E3,PCI合规,P2,enterprise
+企业功能,E4,SSO,P2,enterprise
+企业功能,E5,RBAC,P2,enterprise
+企业功能,E6,99.99% SLA,P2,enterprise
+企业功能,E7,专属工程师,P2,enterprise
+企业功能,E8,优先支持,P2,enterprise
+可观测性(Observability),O2,Simulations,P2,core
+可观测性(Observability),O5,Scorecard,P2,core
+可观测性(Observability),O8,A/B测试,P2,standard
+多助手团队(Squads),S4,成员覆盖配置,P2,standard
+工具系统(Tools),T5,Voicemail Tool,P2,standard
+工具系统(Tools),T7,Make/GHL集成,P2,standard
+工具系统(Tools),T9,MCP支持,P2,standard
+开发者工具,D6,40+应用集成,P2,standard
+电话呼叫(Phone Calls),P5,语音信箱检测,P2,standard
+电话呼叫(Phone Calls),P8,自定义SIP,P2,enterprise
+短信/聊天(SMS/Chat),C1,短信收发,P2,standard
+短信/聊天(SMS/Chat),C2,聊天历史,P2,standard
+自定义能力(Customization),CU4,自托管模型,P2,enterprise
+自定义能力(Customization),CU6,语音克隆,P2,standard
+自定义能力(Customization),CU7,自定义关键词,P2,standard

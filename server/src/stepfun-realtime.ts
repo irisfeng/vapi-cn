@@ -297,8 +297,6 @@ export class StepFunRealtimeClient {
       const event = JSON.parse(data)
       const eventType = event.type
 
-      // console.log('[StepFun] 收到事件:', eventType)
-
       switch (eventType) {
         case StepFunEvents.SESSION_CREATED:
           this.sessionId = event.session?.id

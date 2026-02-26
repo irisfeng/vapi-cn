@@ -1,0 +1,12 @@
+{
+  "name": "vapi-cn",
+  "version": "1.0.0",
+  "description": "VAPI 国内版 - 基于 StepFun Realtime API 的实时语音 AI 代理",
+  "scripts": {
+    "dev": "cd server && bun run src/index.ts",
+    "start": "cd server && bun run src/index.ts"
+  },
+  "keywords": ["voice", "ai", "realtime", "stepfun", "vapi"],
+  "author": "irisfeng",
+  "license": "MIT"
+}

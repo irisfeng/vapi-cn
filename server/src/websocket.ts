@@ -4,6 +4,9 @@
  */
 
 import { createStepFunClient, StepFunRealtimeClient } from "./stepfun-realtime";
+import { createLogger } from "./logger";
+
+const logger = createLogger('websocket')
 
 // ==================== 类型定义 ====================
 

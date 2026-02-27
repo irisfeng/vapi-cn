@@ -3,6 +3,10 @@
  * 基于 WebSocket 的实时语音对话
  */
 
+import { createLogger } from './logger'
+
+const logger = createLogger('stepfun')
+
 // ==================== 类型定义 ====================
 
 export interface StepFunConfig {
@@ -112,7 +116,7 @@ export class StepFunRealtimeClient {
         })
 
         this.ws.onopen = () => {
-          console.log('[StepFun] WebSocket 连接已建立')
+          logger.info('WebSocket 连接已建立')
           this.notifyStatus('connecting', '正在建立连接...')
         }
 
@@ -127,7 +131,7 @@ export class StepFunRealtimeClient {
         }
 
         this.ws.onclose = () => {
-          console.log('[StepFun] WebSocket 连接已关闭')
+          logger.info('WebSocket 连接已关闭')
           this.isConnected = false
           this.notifyStatus('disconnected', '连接已关闭')
         }
@@ -188,7 +192,7 @@ export class StepFunRealtimeClient {
     }
 
     this.ws.send(JSON.stringify(sessionUpdate))
-    console.log('[StepFun] 会话配置已发送')
+    logger.info('会话配置已发送')
   }
 
   private generateEventId(): string {
@@ -223,7 +227,7 @@ export class StepFunRealtimeClient {
     }
 
     this.ws.send(JSON.stringify(event))
-    console.log('[StepFun] 音频已提交')
+    logger.info('音频已提交')
   }
 
   // ==================== 文本发送 ====================
@@ -287,7 +291,7 @@ export class StepFunRealtimeClient {
 
     this.ws.send(JSON.stringify(event))
     this.isAiSpeaking = false
-    console.log('[StepFun] 响应已取消')
+    logger.info('响应已取消')
   }
 
   // ==================== 消息处理 ====================
@@ -301,14 +305,14 @@ export class StepFunRealtimeClient {
         case StepFunEvents.SESSION_CREATED:
           this.sessionId = event.session?.id
           this.isConnected = true
-          console.log('[StepFun] 会话已创建:', this.sessionId)
+          logger.info('会话已创建', { sessionId: this.sessionId })
           this.notifyStatus('connected', `会话已创建: ${this.sessionId}`)
           // 发送会话配置
           this.updateSession()
           break
 
         case StepFunEvents.SESSION_UPDATED:
-          console.log('[StepFun] 会话配置已更新')
+          logger.info('会话配置已更新')
           break
 
         case StepFunEvents.SPEECH_STARTED:
@@ -332,7 +336,7 @@ export class StepFunRealtimeClient {
           if (transcript && this.onUserTranscriptCallback) {
             this.onUserTranscriptCallback(transcript)
           }
-          console.log('[StepFun] 用户语音转写:', transcript)
+          logger.debug('用户语音转写', { transcript })
           break
 
         case StepFunEvents.RESPONSE_CREATED:
@@ -371,7 +375,7 @@ export class StepFunRealtimeClient {
           break
 
         case StepFunEvents.AUDIO_DONE:
-          console.log('[StepFun] 音频输出完成')
+          logger.info('音频输出完成')
           break
 
         case StepFunEvents.RESPONSE_DONE:

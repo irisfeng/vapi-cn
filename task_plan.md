@@ -9,7 +9,7 @@
 - [x] Phase 3: 技术栈重评估 - **切换到 TypeScript/Bun**
 - [x] Phase 4: TypeScript 版本开发
 - [x] Phase 6: 音频播放优化 + 错误处理
-- [ ] Phase 7: FreeSWITCH 集成
+- [ ] Phase 7: FreeSWITCH 集成（移至 Linux 部署阶段）
 
 ## 关键决策
 - [2026-02-17] 技术栈切换：**Python → TypeScript (Bun)**

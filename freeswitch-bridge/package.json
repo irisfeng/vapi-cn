@@ -1,0 +1,12 @@
+{
+  "name": "freeswitch-vapi-bridge",
+  "version": "1.0.0",
+  "description": "FreeSWITCH to VAPI WebSocket bridge",
+  "type": "module",
+  "scripts": {
+    "start": "node bridge.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
